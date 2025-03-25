@@ -46,3 +46,26 @@
 ## Additional Information
 
 - For more information on configuring and using Graylog, refer to the [Graylog documentation](https://go2docs.graylog.org/current/downloading_and_installing_graylog/docker_installation.html).
+
+## Using the Master Script
+
+To automate the entire process of setting up and launching the Graylog instance, you can use the `master_graylog.sh` script. Follow these steps:
+
+1. **Navigate to the Project Directory**
+
+   Open a terminal or command prompt and navigate to the directory containing the `master_graylog.sh` script.
+
+   ```sh
+   cd c:\Users\mochtod\copilot one
+   ```
+
+2. **Make the Script Executable and Run It**
+
+   Run the following commands to make the script executable and execute it:
+
+   ```sh
+   chmod +x master_graylog.sh
+   ./master_graylog.sh
+   ```
+
+This will install Git, pull the latest repository, generate secrets, and start the Docker Compose stack for Graylog.
