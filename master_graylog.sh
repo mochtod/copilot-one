@@ -8,15 +8,15 @@ cd /root
 
 # Clone the repository or pull the latest changes if the repository already exists
 REPO_URL="https://github.com/mochtod/copilot-one.git"
-if [ -d "your-project" ]; then
-  cd your-project
+if [ -d "ssb-graylog" ]; then
+  cd ssb-graylog
   git pull
 else
   git clone $REPO_URL
 fi
 
 # Navigate to the project directory
-cd /root/your-project
+cd /root/copilot-one
 
 # Generate secrets and update .env file
 chmod +x generate_secrets.sh
